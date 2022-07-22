@@ -40,7 +40,8 @@ public class LoginCheckFilter implements Filter {
 //        2.定义不需要过滤器处理的请求
         String[] uris = new String[]{
             "/employee/login", "/employee/logout", "/backend/**", "/front/**",
-                "/common/**", "/user/sendMsg", "/user/login"
+                "/common/**", "/user/sendMsg", "/user/login",
+                "/doc.html", "webjars/**", "swagger-resources", "/v2/api-docs"
         };
 
 //        3.判断本次请求是否需要处理
